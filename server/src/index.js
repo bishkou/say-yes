@@ -19,7 +19,6 @@ mongoose.connect(process.env.DATABASE_URL, {
         console.log('connection failed');
 });
 
-
 const app = express();
 app.use(morgan('common'));
 app.use(helmet());
