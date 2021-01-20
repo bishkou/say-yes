@@ -16,6 +16,7 @@ mongoose.connect(process.env.DATABASE_URL, {
     console.log('everything in place');
 })
     .catch(() => {
+        
         console.log('connection failed');
 });
 
