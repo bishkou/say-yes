@@ -25,18 +25,18 @@ const LogEntryForm = ({ location, onClose }) => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="entry-form">
       { error ? <h3 className="error">{error}</h3> : null}
-      <label htmlFor="apiKey">API KEY</label>
-      <input type="password" name="apiKey" required ref={register} />
-      <label htmlFor="title">Title</label>
+      {/*<label htmlFor="apiKey">API KEY</label>*/}
+      {/*<input type="password" name="apiKey" required ref={register} />*/}
+      <label htmlFor="title">Name</label>
       <input name="title" required ref={register} />
-      <label htmlFor="comments">Comments</label>
+      <label htmlFor="comments">Say Hi From Your Country/City</label>
       <textarea name="comments" rows={3} ref={register}></textarea>
-      <label htmlFor="description">Description</label>
-      <textarea name="description" rows={3} ref={register}></textarea>
-      <label htmlFor="image">Image</label>
-      <input name="image" ref={register} />
-      <label htmlFor="visitDate">Visit Date</label>
-      <input name="visitDate" type="date" required ref={register} />
+      {/*<label htmlFor="description">Description</label>*/}
+      {/*<textarea name="description" rows={3} ref={register}></textarea>*/}
+      {/*<label htmlFor="image">Image</label>*/}
+      {/*<input name="image" ref={register} />*/}
+      {/*<label htmlFor="visitDate">Visit Date</label>*/}
+      {/*<input name="visitDate" type="date" required ref={register} />*/}
       <button disabled={loading}>{loading ? 'Loading...' : 'Create Entry'}</button>
     </form>
   );

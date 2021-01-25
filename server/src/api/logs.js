@@ -32,10 +32,10 @@ router.get('/', async (req, res, next) => {
 
 router.post('/', limiter, async (req, res, next) => {
     try {
-        if (req.get('X-API-KEY') !== API_KEY) {
-            res.status(401);
-            throw new Error('UnAuthorized');
-        }
+        // if (req.get('X-API-KEY') !== API_KEY) {
+        //     res.status(401);
+        //     throw new Error('UnAuthorized');
+        // }
         const logEntry = new LogEntry(req.body);
         const createdEntry = await logEntry.save();
         res.json(createdEntry);

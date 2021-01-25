@@ -46,3 +46,9 @@ body {
   display: block;
   width: 100%;
 }
+
+
+.mapboxgl-popup-close-button{
+  color: #f05305;
+  font-size: 30px;
+}
