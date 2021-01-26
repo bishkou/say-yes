@@ -12,15 +12,7 @@ const logEntrySchema = new Schema({
         type: String,
         required: true,
     },
-    description: String,
     comments: String,
-    image: String,
-    rating: {
-        type: Number,
-        min: 0,
-        max: 10,
-        default: 0,
-    },
     latitude: {
         ...requiredNumber,
         min: -90,
@@ -36,8 +28,6 @@ const logEntrySchema = new Schema({
         type: Date,
         default: Date.now()
     },
-}, {
-    timestamps: true,
 });
 
 const LogEntry = mongoose.model('LogEntry', logEntrySchema);
