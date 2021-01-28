@@ -19,6 +19,7 @@ const limiter = new RateLimit({
     }),
     max: 1,
     windowMs: rateLimitDelay
+
 });
 
 router.get('/', async (req, res, next) => {
