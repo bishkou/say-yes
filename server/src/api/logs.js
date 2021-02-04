@@ -21,6 +21,7 @@ const limiter = new RateLimit({
     windowMs: rateLimitDelay
 });
 
+
 router.get('/', async (req, res, next) => {
     try {
         const entries = await LogEntry.find();
