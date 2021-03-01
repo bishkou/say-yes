@@ -27,7 +27,6 @@ app.use(express.json())
 
 app.use('/api/logs', logs)
 
-
 app.use(middleswares.notFound)
 app.use(middleswares.errorHandler)
 
