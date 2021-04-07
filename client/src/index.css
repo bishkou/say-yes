@@ -52,3 +52,7 @@ body {
   color: #f05305;
   font-size: 30px;
 }
+
+.mapboxgl-popup {
+  z-index: 100;
+}

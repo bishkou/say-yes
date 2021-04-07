@@ -85,7 +85,7 @@ const App = () => {
                         <div className="popup">
                           <h3>{entry.title}</h3>
                           <p>{entry.comments}</p>
-                          <small>Said Hi on: {new Date(entry.visitDate).toLocaleDateString()}</small>
+                          <small>Said Yes on: {new Date(entry.visitDate).toLocaleDateString()}</small>
                           {entry.image && <img src={entry.image} alt={entry.title}/>}
                         </div>
                       </Popup>

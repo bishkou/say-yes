@@ -1,4 +1,4 @@
-const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:1337' : 'https://travel-log-ma1bzmop5.vercel.app';
+const API_URL = window.location.hostname === 'localhost' ? 'http://localhost:1337' : 'https://say-yes-api.vercel.app';
 
 export async function listLogEntries() {
   const response = await fetch(`${API_URL}/api/logs`);
