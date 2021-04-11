@@ -9,6 +9,7 @@ const {
     DATABASE_URL,
 } = process.env;
 
+
 const router = Router();
 
 const rateLimitDelay = 10 * 1000; // 60 second delay
